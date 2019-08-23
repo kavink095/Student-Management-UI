@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style id="sticky">
+  </style>
+</head>
+<body>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+<!--      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<!--<link rel="stylesheet" href="http://bictstudy.com/css/mystyle.css">-->
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="header">
+
+  <h2>The Best Way Institute...</h2>
+  <div class="topnav" id="myTopnav">
+    <a><i class="fa fa-power-off"></i> </a>
+    <a href="#home" class="active"><i class="fa fa-search"></i> Search</a>
+    <a href="#news"><i class="fa fa-hacker-news"></i> News</a>
+    <a href="#contact"><i class="fa fa-id-card"></i> Contact</a>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <br>
+</div>
+<br>
+
+<!--<div class="container-fluid">-->
+
+<!--  <div class="parallax">-->
+<!--    <div class="row">-->
+<!--      <div class="col-1"></div>-->
+<!--      <div class="col-5">-->
+<!--        <h1>Our Goal is......!</h1>-->
+<!--      </div>-->
+<!--      <div class="col-2"></div>-->
+<!--      <div class="col-4">-->
+
+<!--        <h1> We Make &nbsp; Your Future Bright...</h1>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!-- end parralex-->
+
+
+<br>
+<p>Our mission being “Contributing most capable and reliable software engineers with profound knowledge in most recent technologies who can match up to demands of ever evolving IT industry”, IJSE has contributed more than 4300 skillful IT professionals occupying many eminent positions in numerous reputed companies in Sri Lanka. IJSE, being one of the leading IT education providers in Sri Lanka has been focusing on enhancing the skills and attitudes which are desperately sought by the
+  IT industry ever since its inception in 2006 with our most exquisite Software Engineering courses in Sri Lanka.</p>
+<br>
+
+<!-- parralex-->
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="../../../../../assets/student1.jpg" style="width:100%"
+         onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../../../../../assets/student2.jpg" style="width:100%"
+         onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../../../../../assets/student5.jpg" style="width:100%"
+         onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../../../../../assets/student1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../../../../../assets/student2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../../../../../assets/student5.jpg" style="width:100%">
+    </div>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../../../../../assets/student1.jpg" style="width:100%"
+           onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../../../../../assets/student2.jpg" style="width:100%"
+           onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../../../../../assets/student5.jpg" style="width:100%"
+           onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+
+  </div>
+</div>
+<br>
+<h3>success is not a destination success is a journey</h3>
+<br>
+<div class="container1">
+  <video width="30%" controls id="myvideo">
+    <source src="../../../../../assets/hardwork.mp4" type="video/mp4">
+    <source src="hardwork.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+  Praesent convallis urna a lacus interdum .
+</p>
+
+<script>
+  var elem = document.getElementById("myvideo");
+
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+
+  /* box light*/
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+</script>
+
+</body>
+</html>
+
+
